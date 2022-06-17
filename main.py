@@ -35,15 +35,10 @@ def count_words():
         if word not in word_count:
             # If not, create a new entery for it
             word_count[word] = 0
-            # Then increment its counter by 1
+        # Then increment its counter by 1  
         word_count[word] += 1
+    return word_count
    
-    # Traverse the ten words and print their count
-    ten_words = list(word_count.keys())
-    for word in ten_words:
-        # word must take a minimal of 15 spaces; count can take minimum of 8
-        print("{0:15}{1:8}".format(word, word_count[word]))
-
 
 count_word = count_words()
 print(count_word)
